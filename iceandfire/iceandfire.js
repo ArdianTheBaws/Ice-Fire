@@ -17,4 +17,13 @@
               $('#profile').html(html_str);
           }, "json");
           });
+     
+     for (let i = 1; i <= 444; i++) {
+  let houseID = document.createElement('p');
+  houseID.classList.add('houses');
+  houseID.id = i;
+  houseID.innerHTML = `HOUSE ${i}`;
+  document.getElementById('shields').appendChild(houseID);
+}
+     
         });
